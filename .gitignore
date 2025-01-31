@@ -1,0 +1,10 @@
+vendor
+.idea
+.env
+captions_files/*
+cache/*.json
+cache/cache_info/*.json
+youtube_cookies.txt
+html/channels.json
+composer.lock
+teste.php

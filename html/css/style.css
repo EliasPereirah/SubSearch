@@ -1,0 +1,527 @@
+#taxon_loading_animation {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+.taxon_wait{
+    color: #585858;
+}
+.app_input{
+    width: 80%;
+    margin: 0 10%;
+}
+.app_input button{
+    border-radius: 33px !important;
+}
+.taxon_spinner {
+    background: linear-gradient(46deg, #0b0dfe, rgba(255, 255, 255, .2));
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f2f2f2;
+    border-top: 4px solid #d8d8f8;
+    border-radius: 50%;
+    animation: spin 1s linear infinite
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.site-section-wrapper {
+    padding: 0 !important
+}
+
+.taxon_toggle {
+    display: none;
+    margin-bottom: 30px
+}
+
+.no_search_block {
+    border-radius: 4px;
+    /*
+     padding-bottom: 25px;
+    margin: 25px 0;
+    */
+    text-align: center;
+    width: 100%;
+}
+
+#taxon_player {
+    border-radius: 8px
+}
+
+.taxon_container {
+    margin-bottom: 35px
+}
+
+.allResults{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 10%;
+}
+.suggest {
+    text-align: center;
+    background: #ff0;
+    padding: 8px;
+    width: 80%;
+    margin: 8px 10%;
+    border-radius: 4px;
+    color: #db1d1d;
+    font-size: 1.1em;
+    box-sizing: border-box
+}
+
+.suggest a {
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #0b0dfe
+}
+
+.taxon_recommendation {
+    text-align: center;
+    font-size: 1.1em
+}
+
+.taxon_switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px
+}
+
+.taxon_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.taxon_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+.taxon_slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+.taxon_btns input:checked + .taxon_slider {
+    background-color: #2196f3
+}
+
+.taxon_btns input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3
+}
+
+.taxon_btns input:checked + .taxon_slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px)
+}
+
+.taxon_slider.taxon_round {
+    border-radius: 34px
+}
+
+.taxon_slider.taxon_round:before {
+    border-radius: 50%
+}
+
+.bg_light_green {
+    background-color: #fff !important;
+    border-radius: 4px !important;
+    border: 1px solid #000 !important
+}
+
+.light_dark {
+    color: #000 !important
+}
+
+#taxon_alert {
+    width: 50%;
+    padding: 80px 5px;
+    margin: 8px 25%;
+    text-align: center;
+    font-size: 2em;
+    background-color: #f0f8ff;
+    position: fixed;
+    height: auto;
+    z-index: 9999;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#taxon_alert p {
+    margin: 2px 3px
+}
+
+#taxon_alert .medium {
+    font-size: medium
+}
+
+.taxon_btns {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#taxon_pause, #taxon_next, .prev_next_btn {
+    padding: 8px;
+    font-size: 1.5em;
+    width: fit-content;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f0f8ff
+}
+
+#taxon_pause {
+    display: none;
+}
+
+.taxon_container iframe {
+    max-width: 100%;
+    width: 640px
+}
+
+.ytiframe {
+    text-align: center;
+}
+
+
+.not_verbete {
+    color: #2a2ac9;
+}
+
+.no-search h1 {
+    text-align: center
+}
+
+.taxon_contato {
+    font-size: 1.3em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 26px
+}
+
+select[name=channel] {
+    width: 196px;
+    color: #242528;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 1.1em;
+    border: 1px solid #000;
+    border-radius: 33px
+}
+
+.taxon_pagination {
+    width: 100%;
+    padding: 11px 0;
+    text-align: center;
+    display: inline-block
+}
+
+.taxon_pagination .taxon_circle {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    vertical-align: middle;
+    font-weight: 800;
+    border-radius: 50%;
+    background-color: #1319df;
+    display: inline-block;
+    line-height: 30px
+}
+
+.taxon_pagination a {
+    text-decoration: none;
+    text-align: center;
+    color: blue;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.taxon_container a:hover {
+    color: blue
+}
+
+.taxon_pagination a:visited {
+    color: #686464
+}
+
+.e404 {
+    border: 2px solid
+}
+
+.e404 b {
+    color: rgb(73 183 77)
+}
+
+.taxon_thumb {
+    max-width: 100%;
+    border: 2px solid #fff;
+    border-radius: 7px
+}
+
+.e404 {
+    border: 2px solid
+}
+
+.e404 b {
+    color: rgb(73 183 77)
+}
+
+.no-search {
+    padding: 2px 23px;
+    margin: 4px 0;
+    font-size: 1.5em;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.no-search b {
+    color: #34457a
+}
+
+.no-search a {
+    color: #0569ff
+}
+
+.taxon_info {
+    text-align: center;
+    color: #34457a
+}
+
+.taxon_info p {
+    font-size: 1.2em
+}
+
+form#taxon input {
+    width: 100%;
+    height: 52px;
+    border-radius: 33px;
+    padding-left: 9px;
+    box-sizing: border-box;
+}
+
+#taxon label {
+    display: inline-block;
+    width: 60%;
+    margin-right: 0;
+}
+
+.taxon_top {
+    text-align: center;
+    height: 4em;
+    padding-top: 18px;
+    border-top-left-radius: 12px;
+    line-height: 1em;
+    border-top-right-radius: 12px;
+    margin-bottom: 26px
+}
+
+.taxon_top:first-letter {
+    text-transform: capitalize
+}
+
+.taxon_container button {
+    cursor: pointer;
+    padding: 16px 10px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700
+}
+
+.taxon_content {
+    width: 100%;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: times new roman, Times, serif
+}
+
+.taxon_result b {
+    color: #312b2b
+}
+
+.taxon_result {
+    flex: 1 1 49%;
+    max-width: 49%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000;
+    float: left;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 8px 8px 25px;
+    margin: 0 .5% 12px
+}
+
+.taxon_result:nth-of-type(even) {
+}
+
+.taxon_application {
+    text-align: center;
+    padding: 8px
+}
+
+.taxon_application input::placeholder {
+    color: #242528;
+    font-size: 20px;
+    font-weight: 400
+}
+
+.taxon_application input {
+    font-weight: 900;
+    font-size: 18px;
+   /* padding: 12px 0 12px 12px; */
+    color: #242528;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 4px
+}
+
+.taxon_result p {
+    padding: 2px;
+    margin: 0
+}
+
+.taxon_middle {
+    margin-bottom: 0 !important;
+    vertical-align: middle;
+    width: 32px !important;
+    height: 32px !important;
+    opacity: .4
+}
+
+.taxon_container a {
+    text-decoration: none;
+    font-family: Georgia, serif
+}
+
+.taxon_container h1 {
+    color: #090909;
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: monospace
+}
+
+.taxon_container em {
+    color: #424f6f;
+    font-style: normal;
+    font-weight: 600
+}
+
+#taxon_alert button{
+    padding: 7px 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#taxon_alert button:hover{
+    background-color: #15d415;
+    color: #fff;
+}
+
+@media all and (max-width: 800px) {
+    .app_input{
+        width: 100%;
+        margin: 0;
+    }
+    .allResults{
+        width: 100%;
+        margin: 0;
+    }
+    #taxon_alert {
+        width: 96%;
+        padding: 80px 5px;
+        margin: 7px 0.5%;
+        font-size: 1.4em;
+    }
+
+    #taxon label {
+        display: inline-block;
+        width: 95%
+    }
+
+    select[name=channels] {
+        margin-top: 6px
+    }
+
+    .taxon_result:nth-of-type(even) {
+        border-right: 0
+    }
+
+    .taxon_result {
+        font-size: 1em;
+        margin: 5px 0;
+        flex-basis: 100%;
+        max-width: 100%
+    }
+
+    .taxon_result p {
+        padding: 2px 5px;
+        margin: 0
+    }
+
+    .taxon_container img {
+        width: 100%
+    }
+
+    .taxon_middle {
+        width: 32px
+    }
+
+    .taxon_content {
+        width: 98%;
+        margin: 0 1%;
+        padding: 2px 4px;
+        padding-bottom: 50px
+    }
+
+    .no-search {
+        width: 100%;
+        margin: 0%;
+        padding: 2px;
+        font-size: 1.2em
+    }
+
+    .taxon_container h1 {
+        font-size: 1.2em
+    }
+}
