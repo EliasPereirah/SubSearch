@@ -6,7 +6,7 @@ Já imaginou poder encontrar o momento exato em que uma palavra ou frase foi dit
 
 Isto é o que este projeto faz.
 
-![Print - Screenshot](https://raw.githubusercontent.com/EliasPereirah/SubSearch/main/html/imgs/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/EliasPereirah/SubSearch/main/html/imgs/screenshot.png)
 
 # Instalação
 - Esse projeto usa o "banco de dados" Typesense 
