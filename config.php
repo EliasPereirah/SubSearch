@@ -26,14 +26,14 @@ const EXECUTION_INTERVAL = 1; // Intervalo em minutos entre um processo e outro 
 const MAX_ATTEMPTS = 7; // Quantas vezes o script vai tentar extrair uma legenda do YouTube
 
 
-const MAX_YT_HITS = 20;
+const MAX_YT_HITS = 5;
 // quantas vezes ao máximo será feita requisições HTTP no YouTube por cada chamada do script extract_captions.php
 // Número maior permite indexação mais rápida, mas corre maior risco de ter o IP bloqueado
 
 const YOUTUBE_COOKIE_FILE_PATH = __DIR__.'/youtube_cookies.txt';
 // Obs: Criar e usar uma conta do YouTube especificamente para isso
 // Como obter cookies: https://github.com/EliasPereirah/YoutubeSubtitlesDownloader/tree/main?tab=readme-ov-file#chromeedge-extension
-const DO_YT_LOGIN = true; // se será feito login com cookies do YouTube
+const DO_YT_LOGIN = false; // se será feito login com cookies do YouTube
 // Pode ser necessário caso o YouTube bloquei o acesso ao IP
 // Permitindo o acesso apenas quando logado
 
@@ -67,10 +67,12 @@ const DB_CONFIG = [
 ];
 
 
+const ADD_EMBEDDINGS = false; // Se será adicionado embeddings no momento da indexação
+// Permite melhor resultado na busca - API key da VoyageAI é necessário caso true
 
-const HYBRID_SEARCH = true; // Para melhores resultados deixar true - fulltext e vector search
+const HYBRID_SEARCH = false; // Para melhores resultados deixar true - fulltext e vector search
 
-const DO_RERANK = true;
+const DO_RERANK = false; // VoyageAPI necessária caso true
 const VOYAGE_RERANK_MODEL = "rerank-2-lite";
 
 

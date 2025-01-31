@@ -12,20 +12,19 @@ Isto é o que este projeto faz.
 - Esse projeto usa o "banco de dados" Typesense 
 Para baixar, confira a documentação oficial: https://typesense.org/docs/guide/install-typesense.html#option-2-local-machine-self-hosting
 
-Obs: Se for fazer a instalação diretamente no OS sua chave API pode ser vista após instalação com o comando: `cat /etc/typesense/typesense-server.ini`
+Obs: Se for fazer a instalação diretamente no OS em vez de Docker sua chave API pode ser vista após instalação com o comando: `cat /etc/typesense/typesense-server.ini`
 - Clone este repositório: `git clone https://github.com/EliasPereirah/SubSearch`
 - No terminal execute: `composer update`
 
 # Configuração
 - Renomeei `env.example` para `.env` e coloque as informações necessárias
-  - Obrigatório: `YOUTUBE_API_KEY` e `VOYAGE_API_KEY` (SendGrid é opcional)
+  - `YOUTUBE_API_KEY` é obrigatório, ser for usar embeddings `VOYAGE_API_KEY` também. (SendGrid é opcional)
   - Importe o aquivo SQL `subsearch.sql` disponibilizado neste repo em um banco de dados MySQL/MariaDB
-  - Já no arquivo `config.php` configure a API_KEY para a constante `TS_API_KEY` e dados de acesso ao MySQL/MariaDB
+  - Já no arquivo `config.php` configure a API_KEY para a constante `TS_API_KEY` e dados de acesso ao MySQL/MariaDB e 
+outras informações de acordo sua preferência
 
 # API Keys
 Obtendo YOUTUBE_API_KEY - Veja como obter uma chave API para YouTube neste vídeo do YouTube :) : https://www.youtube.com/watch?v=uz7dY8qTFJw
-
-
 
 Obtendo VOYAGE_API_KEY - Cadastre se na VoyageAI e obtenha sua chave API aqui https://dashboard.voyageai.com/api-keys
 
@@ -62,5 +61,3 @@ que desejar indexar, isso vai adicionar novos vídeos do canal à collection vid
 
 # Recomendações
 Deixe apenas o conteúdo da pasta html exposto para web caso vá hospedar o projeto online
-
-

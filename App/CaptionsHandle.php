@@ -173,7 +173,7 @@ class CaptionsHandle {
                 }
             }
             if(!empty($legendaInputs)){
-                if($this->MySense->addSubtitleSnippet($legendaInputs, true)){
+                if($this->MySense->addSubtitleSnippet($legendaInputs, true, ADD_EMBEDDINGS)){
                     return true;
                 }else{
                     $error_text = json_encode($this->MySense->getErrors());
