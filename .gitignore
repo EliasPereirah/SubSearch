@@ -1,7 +1,7 @@
 vendor
 .idea
 .env
-captions_files/*
+captions_files/*.ttml
 cache/*.json
 cache/cache_info/*.json
 youtube_cookies.txt

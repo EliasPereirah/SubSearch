@@ -13,8 +13,7 @@
     "ext-pdo": "*",
     "ext-mbstring": "*",
     "ext-fileinfo": "*",
-    "php-http/curl-client": "^2.3",
-    "ext-intl": "*"
+    "php-http/curl-client": "^2.3"
   },
 
   "config": {
