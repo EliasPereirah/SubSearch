@@ -9,6 +9,7 @@ Isto é o que este projeto faz.
 # Instalação
 - Esse projeto usa o "banco de dados" Typesense 
 Para baixar, confira a documentação oficial: https://typesense.org/docs/guide/install-typesense.html#option-2-local-machine-self-hosting
+
 Obs: Se for fazer a instalação diretamente no OS sua chave API pode ser vista após instalação com o comando: `cat /etc/typesense/typesense-server.ini`
 - Clone este repositório: `git clone https://github.com/EliasPereirah/SubSearch`
 - No terminal execute: `composer update`
@@ -53,6 +54,7 @@ qualidade dos resultados da busca.
 
 Nota: Serão indexados os vídeos encontrados na collection video_data, novos vídeos que o canal postar não serão 
 automaticamente indexados.
+
 Para indexar novos vídeos do canal você poderá acessar /dash novamente e inserir novamente pelo menos um ID do canal 
 que desejar indexar, isso vai adicionar novos vídeos do canal à collection video_data para posteriormente serem indexados pelo script `extract_captions.php`
 
